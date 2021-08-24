@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            <form action="connect.php" method="POST">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+                </div>
+                <div class="form-group">
+                <label for="birthday">Date of Birth</label>
+                <input type="date"
+                 data-date-inline-picker="true" 
+                 name="birthday"
+                 />
+                 </div>
+                <div class="form-group">
+                <label for="number">Telephone/Mobile</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="number"
+                      name="number"
+                />
+                </div>
+                <div class="form-group">
+                    <label for="designation">Designation</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="designation"
+                      name="designation"
+                    />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+               <label for="hobbies">Hobbies</label><br>
+               <input type="checkbox" id="hobbies" name="hobbies" value="Dancing">
+               <label for="hobbies"> Dancing</label><br>
+               <input type="checkbox" id="hobbies" name="hobbies" value="Photography">
+                <label for="hobbies"> Photography</label><br>
+            <input type="checkbox" id="hobbies" name="hobbies" value="Reading">
+            <label for="hobbies"> Reading</label><br>
+            <input type="checkbox" id="hobbies" name="hobbies" value="Football">
+            <label for="hobbies"> Football</label>
+            </div>
+
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
